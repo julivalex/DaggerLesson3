@@ -9,4 +9,8 @@ class FolderListActivityPresenter(var mailManager: MailManager) {
     fun setActivity(activity: FolderListActivity) {
         this.activity = activity
     }
+
+    fun loadFolders() {
+        activity.showFolders(mailManager.getFolders())
+    }
 }

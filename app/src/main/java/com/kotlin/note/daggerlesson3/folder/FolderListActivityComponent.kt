@@ -5,6 +5,6 @@ import dagger.Subcomponent
 
 @ActivityScope
 @Subcomponent(modules = [FolderListActivityModule::class])
-interface FolderActivityComponent {
+interface FolderListActivityComponent {
     fun injectFoldersListActivity(activity: FolderListActivity)
 }
